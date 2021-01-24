@@ -1,1 +1,3 @@
 班级魔方每日上报
+使用网页版登录后自行替换daily_report.py中的cookies
+form_id可以在每日健康上报页面使用f12+搜索找到
