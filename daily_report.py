@@ -7,14 +7,14 @@ import requests
 import datetime
 import schedule
 
-url = 'http://banjimofang.com/student/course/16705/profiles/3824?_=add'
+url = 'http://banjimofang.com/student/course/16705/profiles/29?_=add'
 cookies = {'your_cookies': 'your_cookies'}
 ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'
 log_path = './daily_report.log'
 
 def get_form_id():
     base_id = 1 # You can find it with f12
-    base_time = datetime.datetime(2021, 1, 23)
+    base_time = datetime.datetime(2021, 1, 25) # Set to the date of first use
     current_time = datetime.datetime.now()
     difference = current_time - base_time
     return base_id + difference.days
